@@ -2,11 +2,10 @@ name: Test application
 
 on:
     push: ~
+    workflow_dispatch: ~
     pull_request:
         branches:
             - 'master'
-    schedule:
-        -   cron: "0 1 * * 6" # Run at 1am every Saturday
 
 jobs:
     tests:
